@@ -12,16 +12,17 @@
         xl:mt-28
       "
     >
-      <div class="sm:text-center lg:text-left">
+        <img class="mx-auto d-block max-w-[160px] max-h-[160px]" src="~assets/images/memoji.png"/>
+      <div class="text-center">
         <h1
           class="
-            text-4xl
+            text-2xl
             font-bold
-            tracking-tight
             text-[#3B248B]
-            sm:text-5xl
+            sm:text-4xl
             md:text-6xl
-            text-center
+            max-w-4xl
+            mx-auto
           "
         >
           Chatting about Startups and Software Engineering
@@ -30,17 +31,14 @@
           class="
             mt-3
             text-base text-gray-700
-            sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg
+            mx-auto sm:mt-5 max-w-xl sm:text-lg
             md:mt-5 md:text-xl
-            lg:mx-0
           "
         >
-          Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem
-          cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat
-          aliqua.
+          Sharing insights about the latest trends in software engineering and the satrtup world.
         </p>
-        <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-          <div class="rounded-md shadow">
+        <div class="mt-5 sm:mt-8 flex justify-center">
+          <div class="">
             <a
               href="#"
               class="
@@ -48,40 +46,21 @@
                 w-full
                 items-center
                 justify-center
-                rounded-md
-                border border-transparent
-                bg-indigo-600
-                px-8
-                py-3
-                text-base
-                font-medium
-                text-white
-                hover:bg-indigo-700
-                md:py-4 md:px-10 md:text-lg
+                rounded-full
+                bg-white
+                text-[#FF0096]
+                px-4
+                py-2
+                text-sm
               "
-              >Get started</a
-            >
-          </div>
-          <div class="mt-3 sm:mt-0 sm:ml-3">
-            <a
-              href="#"
-              class="
-                flex
-                w-full
-                items-center
-                justify-center
-                rounded-md
-                border border-transparent
-                bg-indigo-100
-                px-8
-                py-3
-                text-base
-                font-medium
-                text-indigo-700
-                hover:bg-indigo-200
-                md:py-4 md:px-10 md:text-lg
-              "
-              >Live demo</a
+              >
+              <span>Scroll to read articles</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 17L12 7M12 17L8 13M12 17L16 13" stroke="#FF0096" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+
+              </a
             >
           </div>
         </div>
