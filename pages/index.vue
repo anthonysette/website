@@ -1,9 +1,11 @@
-<script setup></script>
+<script setup>
+import CTASection from '../components/CTASection.vue';</script>
 
 <template>
   <div>
     <!-- <Hero /> -->
     <BlogSection/>
+    <CTASection/>
   </div>
 </template>
 

@@ -19,6 +19,7 @@ module.exports = {
       DEFAULT: '0.25rem',
       'md': '0.75rem',
       'lg': '1.25rem',
+      'xl': '1.5rem',
       'full': '9999px',
     },
     extend: {},

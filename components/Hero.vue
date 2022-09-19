@@ -36,7 +36,7 @@
             md:mt-5 md:text-xl
           "
         >
-          Sharing insights about the latest trends in software engineering and the satrtup world.
+          Sharing insights about the latest trends in software engineering and the startup world.
         </p>
         <div class="mt-5 sm:mt-8 flex justify-center">
           <div class="">

@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div id="popular-articles" class="max-w-7xl px-4 mx-auto mb-16 mt-12">
+  <div id="popular-articles" class="max-w-7xl px-4 mx-auto pb-16 pt-12">
     <h2 class="pb-6 text-xl
             font-bold
             text-[#271A17]
@@ -19,9 +19,6 @@
           Sharing insights about the latest trends in software engineering and the satrtup world.
         </p>
     <div class="gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-      <BlogCard/>
-      <BlogCard/>
-      <BlogCard/>
       <BlogCard/>
       <BlogCard/>
       <BlogCard/>
