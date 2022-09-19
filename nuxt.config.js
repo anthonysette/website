@@ -23,6 +23,8 @@ export default defineNuxtConfig({
 
   css: ["@/assets/css/main.css"],
 
+  plugins: ['~/plugins/ScrollBehavior.js'],
+
   build: {
     postcss: {
       postcssOptions: {

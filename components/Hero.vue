@@ -9,7 +9,8 @@
         sm:mt-12 sm:px-6
         md:mt-16
         lg:mt-20 lg:px-8
-        xl:mt-28
+        xl:mt-24
+        pb-16
       "
     >
         <img class="mx-auto d-block max-w-[160px] max-h-[160px]" src="~assets/images/memoji.png"/>
@@ -17,12 +18,12 @@
         <h1
           class="
             text-2xl
-            font-bold
             text-[#3B248B]
             sm:text-4xl
-            md:text-6xl
-            max-w-4xl
+            md:text-5xl
+            max-w-5xl
             mx-auto
+            font-display
           "
         >
           Chatting about Startups and Software Engineering
@@ -39,8 +40,8 @@
         </p>
         <div class="mt-5 sm:mt-8 flex justify-center">
           <div class="">
-            <a
-              href="#"
+            <nuxt-link
+              :to="{hash: '#popular-articles'}"
               class="
                 flex
                 w-full
@@ -60,23 +61,11 @@
             </svg>
 
 
-              </a
+              </nuxt-link
             >
           </div>
         </div>
       </div>
     </main>
-    <div
-      class="
-        -z-10
-        absolute
-        inset-y-0
-        w-full
-        h-3/4
-        bg-gradient-to-br
-        from-[#E9DEFA]
-        to-[#FBFCDB]
-      "
-    ></div>
   </div>
 </template>
