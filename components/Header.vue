@@ -4,17 +4,17 @@ import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
 
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <Popover class="relative bg-white">
+  <Popover class="relative">
     <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div
-        class="flex items-center justify-between border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10"
+        class="flex items-center justify-between py-6 md:justify-start md:space-x-10"
       >
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <a href="/" class="text-base font-semibold">Anthony Sette</a>
         </div>
         <div class="-my-2 -mr-2 md:hidden">
           <PopoverButton
-            class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-300"
+            class="inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-300"
           >
             <span class="sr-only">Open menu</span>
             <!-- Heroicon name: outline/bars-3 -->

@@ -9,6 +9,10 @@ module.exports = {
     "*.vue",
   ],
   theme: {
+    fontFamily: {
+      sans: ['Poppins', 'sans'],
+      display: ['Dela Gothic One', 'sans']
+    },
     extend: {},
   },
   plugins: [],
