@@ -7,6 +7,7 @@ import CTASection from '../components/CTASection.vue';</script>
     <PopularBlogSection/>
     <CTASection/>
     <AllBlogSection/>
+    <Footer/>
 
   </div>
 </template>

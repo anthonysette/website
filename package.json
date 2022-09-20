@@ -8,6 +8,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@tailwindcss/line-clamp": "^0.4.2",
     "autoprefixer": "^10.4.11",
     "eslint": "^8.23.1",
     "eslint-plugin-nuxt": "^4.0.0",

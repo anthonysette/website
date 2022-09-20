@@ -29,7 +29,8 @@
             md:text-5xl
             max-w-5xl
             mx-auto
-            font-display
+            font-black
+            
           ">
           Chatting about Startups and Software Engineering
         </h1>

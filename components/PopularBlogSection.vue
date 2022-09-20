@@ -7,7 +7,7 @@
             text-[#271A17]
             md:text-4xl
             max-w-4xl
-            mx-auto text-center font-display">Popular Articles</h2>
+            mx-auto text-center font-black">Popular Articles</h2>
             <p
           class="
             text-base text-gray-500
@@ -16,7 +16,7 @@
         >
           Sharing insights about the latest trends in software engineering and the satrtup world.
         </p>
-    <div class="gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+    <div class="gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
       <BlogCard/>
       <BlogCard/>
       <BlogCard/>
