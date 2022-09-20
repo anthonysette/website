@@ -5,18 +5,22 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "slicemachine": "start-slicemachine"
   },
   "devDependencies": {
+    "@nuxtjs/prismic": "^3.0.0-rc.1",
     "@tailwindcss/line-clamp": "^0.4.2",
     "autoprefixer": "^10.4.11",
     "eslint": "^8.23.1",
     "eslint-plugin-nuxt": "^4.0.0",
     "nuxt": "3.0.0-rc.10",
     "postcss": "^8.4.16",
+    "slice-machine-ui": "^0.4.2",
     "tailwindcss": "^3.1.8"
   },
   "dependencies": {
-    "@headlessui/vue": "^1.7.2"
+    "@headlessui/vue": "^1.7.2",
+    "@prismicio/richtext": "^2.1.1"
   }
 }

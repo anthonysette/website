@@ -21,6 +21,10 @@ export default defineNuxtConfig({
     },
   },
 
+  modules: ['@nuxtjs/prismic'],
+
+  prismic: { endpoint: 'anthonysette' },
+
   css: ["@/assets/css/main.css"],
 
   plugins: ['~/plugins/ScrollBehavior.js'],

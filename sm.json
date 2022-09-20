@@ -1,0 +1,6 @@
+{
+  "apiEndpoint": "https://anthonysette.prismic.io/api/v2",
+  "libraries": [
+    "@/slices"
+  ]
+}

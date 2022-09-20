@@ -51,14 +51,15 @@
                 justify-center
                 rounded-full
                 bg-white
-                text-[#FF0096]
+                text-indigo-500
                 px-4
                 py-2
                 text-sm
               ">
+              <!-- old was pink #FF0096 -->
               <span>Scroll to read articles</span>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 17L12 7M12 17L8 13M12 17L16 13" stroke="#FF0096" stroke-width="1.5" stroke-linecap="round"
+                <path d="M12 17L12 7M12 17L8 13M12 17L16 13" stroke="#6366f1" stroke-width="1.5" stroke-linecap="round"
                   stroke-linejoin="round" />
               </svg>
 
