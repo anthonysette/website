@@ -4,8 +4,10 @@ import CTASection from '../components/CTASection.vue';</script>
 <template>
   <div>
     <!-- <Hero /> -->
-    <BlogSection/>
+    <PopularBlogSection/>
     <CTASection/>
+    <AllBlogSection/>
+
   </div>
 </template>
 

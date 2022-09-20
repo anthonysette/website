@@ -3,13 +3,11 @@
 
 <template>
   <div id="popular-articles" class="max-w-7xl px-4 mx-auto pb-16 pt-12">
-    <h2 class="pb-6 text-xl
-            font-bold
+    <h2 class="pb-6 text-2xl
             text-[#271A17]
-            sm:text-2xl
             md:text-4xl
             max-w-4xl
-            mx-auto text-center">Popular Articles</h2>
+            mx-auto text-center font-display">Popular Articles</h2>
             <p
           class="
             text-base text-gray-500
