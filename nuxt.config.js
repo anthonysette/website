@@ -2,6 +2,7 @@
 export default defineNuxtConfig({
 
   app: {
+    cdnURL: 'https://anthonysette.s3.us-east-2.amazonaws.com/',
     head: {
       title: 'Anthony Sette - Chatting about Startups and Software Engineering',
       htmlAttrs: {
