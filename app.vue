@@ -1,15 +1,9 @@
 <script setup></script>
 
 <template>
-  <div>
-    <div class="w-full bg-gradient-to-br
-        from-[#E9DEFA]
-        to-[#FBFCDB]">
-      <Header />
-      <Hero />
-    </div>
+  <NuxtLayout>
     <NuxtPage />
-  </div>
+  </NuxtLayout>
 </template>
 
 <style scoped></style>

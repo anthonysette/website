@@ -1,14 +1,15 @@
 <script setup>
-import CTASection from '../components/CTASection.vue';</script>
+definePageMeta({
+  layout: "home-page",
+});
+</script>
 
 <template>
   <div>
     <!-- <Hero /> -->
-    <PopularBlogSection/>
-    <CTASection/>
-    <AllBlogSection/>
-    <Footer/>
-
+    <PopularBlogSection />
+    <CTASection />
+    <AllBlogSection />
   </div>
 </template>
 

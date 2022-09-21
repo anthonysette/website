@@ -1,20 +1,45 @@
 <script setup>
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
+
+const props = defineProps({
+  white: {
+    type: Boolean,
+    default: true,
+  },
+});
 </script>
 
 <template>
   <!-- This example requires Tailwind CSS v2.0+ -->
-  <Popover class="relative">
+  <Popover class="relative" :class="{ 'bg-white': white }">
     <div class="mx-auto max-w-7xl px-4 sm:px-6">
       <div
-        class="flex items-center justify-between py-6 md:justify-start md:space-x-10"
+        class="
+          flex
+          items-center
+          justify-between
+          py-6
+          md:justify-start md:space-x-10
+        "
       >
         <div class="flex justify-start lg:w-0 lg:flex-1">
           <a href="/" class="text-base font-semibold">Anthony Sette</a>
         </div>
         <div class="-my-2 -mr-2 md:hidden">
           <PopoverButton
-            class="inline-flex items-center justify-center rounded-md p-2 text-black hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-300"
+            class="
+              inline-flex
+              items-center
+              justify-center
+              rounded-md
+              p-2
+              text-black
+              hover:bg-gray-100 hover:text-gray-700
+              focus:outline-none
+              focus:ring-2
+              focus:ring-inset
+              focus:ring-indigo-300
+            "
           >
             <span class="sr-only">Open menu</span>
             <!-- Heroicon name: outline/bars-3 -->
@@ -47,7 +72,20 @@ import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
           <a
             href="https://twitter.com/sette_anthony"
             target="_blank"
-            class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-3 focus:outline-none focus:ring-indigo-300 font-medium rounded-full text-sm p-2 text-center inline-flex items-center mr-2"
+            class="
+              text-white
+              bg-indigo-500
+              hover:bg-indigo-600
+              focus:ring-3 focus:outline-none focus:ring-indigo-300
+              font-medium
+              rounded-full
+              text-sm
+              p-2
+              text-center
+              inline-flex
+              items-center
+              mr-2
+            "
           >
             <svg
               width="20"
@@ -66,7 +104,20 @@ import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
           <a
             href="https://github.com/anthonysette"
             target="_blank"
-            class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-3 focus:outline-none focus:ring-indigo-300 font-medium rounded-full text-sm p-2 text-center inline-flex items-center mr-2"
+            class="
+              text-white
+              bg-indigo-500
+              hover:bg-indigo-600
+              focus:ring-3 focus:outline-none focus:ring-indigo-300
+              font-medium
+              rounded-full
+              text-sm
+              p-2
+              text-center
+              inline-flex
+              items-center
+              mr-2
+            "
           >
             <svg
               width="20"
@@ -86,7 +137,20 @@ import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
           <a
             href="https://linkedin.com/in/anthonysette"
             target="_blank"
-            class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-3 focus:outline-none focus:ring-indigo-300 font-medium rounded-full text-sm p-2 text-center inline-flex items-center mr-2"
+            class="
+              text-white
+              bg-indigo-500
+              hover:bg-indigo-600
+              focus:ring-3 focus:outline-none focus:ring-indigo-300
+              font-medium
+              rounded-full
+              text-sm
+              p-2
+              text-center
+              inline-flex
+              items-center
+              mr-2
+            "
           >
             <svg
               width="20"
@@ -106,7 +170,20 @@ import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
           <a
             href="https://medium.com/@anthonysette"
             target="_blank"
-            class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-3 focus:outline-none focus:ring-indigo-300 font-medium rounded-full text-sm p-2 text-center inline-flex items-center mr-2"
+            class="
+              text-white
+              bg-indigo-500
+              hover:bg-indigo-600
+              focus:ring-3 focus:outline-none focus:ring-indigo-300
+              font-medium
+              rounded-full
+              text-sm
+              p-2
+              text-center
+              inline-flex
+              items-center
+              mr-2
+            "
           >
             <svg
               width="20"
@@ -137,10 +214,25 @@ import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
     >
       <PopoverPanel
         focus
-        class="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
+        class="
+          absolute
+          inset-x-0
+          top-0
+          origin-top-right
+          transform
+          p-2
+          transition
+          md:hidden
+        "
       >
         <div
-          class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5"
+          class="
+            divide-y-2 divide-gray-50
+            rounded-lg
+            bg-white
+            shadow-lg
+            ring-1 ring-black ring-opacity-5
+          "
         >
           <div class="px-5 pt-5 pb-6">
             <div class="flex items-center justify-between">
@@ -153,7 +245,20 @@ import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
               </div>
               <div class="-mr-2">
                 <PopoverButton
-                  class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-300"
+                  class="
+                    inline-flex
+                    items-center
+                    justify-center
+                    rounded-md
+                    bg-white
+                    p-2
+                    text-gray-600
+                    hover:bg-gray-100 hover:text-gray-700
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-inset
+                    focus:ring-indigo-300
+                  "
                 >
                   <span class="sr-only">Close menu</span>
                   <!-- Heroicon name: outline/x-mark -->
@@ -230,7 +335,20 @@ import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
             <a
               href="https://twitter.com/sette_anthony"
               target="_blank"
-              class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-3 focus:outline-none focus:ring-indigo-300 font-medium rounded-full text-sm p-2 text-center inline-flex items-center mr-2"
+              class="
+                text-white
+                bg-indigo-500
+                hover:bg-indigo-600
+                focus:ring-3 focus:outline-none focus:ring-indigo-300
+                font-medium
+                rounded-full
+                text-sm
+                p-2
+                text-center
+                inline-flex
+                items-center
+                mr-2
+              "
             >
               <svg
                 width="20"
@@ -249,7 +367,20 @@ import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
             <a
               href="https://github.com/anthonysette"
               target="_blank"
-              class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-3 focus:outline-none focus:ring-indigo-300 font-medium rounded-full text-sm p-2 text-center inline-flex items-center mr-2"
+              class="
+                text-white
+                bg-indigo-500
+                hover:bg-indigo-600
+                focus:ring-3 focus:outline-none focus:ring-indigo-300
+                font-medium
+                rounded-full
+                text-sm
+                p-2
+                text-center
+                inline-flex
+                items-center
+                mr-2
+              "
             >
               <svg
                 width="20"
@@ -269,7 +400,20 @@ import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
             <a
               href="https://linkedin.com/in/anthonysette"
               target="_blank"
-              class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-3 focus:outline-none focus:ring-indigo-300 font-medium rounded-full text-sm p-2 text-center inline-flex items-center mr-2"
+              class="
+                text-white
+                bg-indigo-500
+                hover:bg-indigo-600
+                focus:ring-3 focus:outline-none focus:ring-indigo-300
+                font-medium
+                rounded-full
+                text-sm
+                p-2
+                text-center
+                inline-flex
+                items-center
+                mr-2
+              "
             >
               <svg
                 width="20"
@@ -289,7 +433,20 @@ import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
             <a
               href="https://medium.com/@anthonysette"
               target="_blank"
-              class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-3 focus:outline-none focus:ring-indigo-300 font-medium rounded-full text-sm p-2 text-center inline-flex items-center mr-2"
+              class="
+                text-white
+                bg-indigo-500
+                hover:bg-indigo-600
+                focus:ring-3 focus:outline-none focus:ring-indigo-300
+                font-medium
+                rounded-full
+                text-sm
+                p-2
+                text-center
+                inline-flex
+                items-center
+                mr-2
+              "
             >
               <svg
                 width="20"

@@ -9,8 +9,8 @@ const props = defineProps({
     default: "Image Placeholder",
   },
   tags: {
-    type: String,
-    default: "CATEGORY",
+    type: Array,
+    default: ["Category", "Category"],
   },
   title: {
     type: String,
@@ -21,11 +21,13 @@ const props = defineProps({
     default:
       "Lorem ipsum dolar sit lorem ipsum dolar sit lorem ipsum dolar sit lorem ipsum dolar sit",
   },
+  uid: {
+    type: String,
+    default: "slug",
+  },
   date: {
-    type: Date,
-    default: function () {
-      return new Date();
-    },
+    type: String,
+    default: "02-02-2021",
   },
 });
 
@@ -37,7 +39,8 @@ const formattedDate = computed(() => {
 
 <template>
   <!-- border-[#CFD6E5] -->
-  <div
+  <nuxt-link
+    :to="`/blog/${uid}`"
     class="flex flex-col sm:flex-row bg-white drop-shadow-xl rounded-lg flex"
   >
     <img
@@ -72,7 +75,7 @@ const formattedDate = computed(() => {
         </div>
       </div>
     </div>
-  </div>
+  </nuxt-link>
 </template>
 
 <style scoped></style>
