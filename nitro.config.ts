@@ -1,6 +1,6 @@
 import { defineNitroConfig } from 'nitropack'
 
 export default defineNitroConfig({
-  preset: 'aws-lambda'
+  preset: 'aws-lambda',
   serveStatic: true
 })
