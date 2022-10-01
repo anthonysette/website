@@ -24,6 +24,13 @@ module.exports = {
     },
     extend: {},
   },
+  // Due to issue of class-detection not auto-refreshing
+  // Disable this to build for production
+  safelist: [
+    {
+      pattern: /.*/,
+    },
+  ],
   plugins: [
     require('@tailwindcss/line-clamp'),
   ],

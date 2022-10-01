@@ -21,6 +21,13 @@
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.2",
-    "@prismicio/richtext": "^2.1.1"
+    "@highlightjs/vue-plugin": "^2.1.0",
+    "@prismicio/richtext": "^2.1.1",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "escape-html": "^1.0.3",
+    "highlight.js": "^11.6.0",
+    "simple-syntax-highlighter": "^2.2.3",
+    "vue-code-highlight": "^0.7.8",
+    "vue3-highlightjs": "^1.0.5"
   }
 }

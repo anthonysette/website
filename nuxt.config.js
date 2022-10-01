@@ -28,7 +28,7 @@ export default defineNuxtConfig({
 
   css: ["@/assets/css/main.css"],
 
-  plugins: ['~/plugins/ScrollBehavior.js'],
+  plugins: ['~/plugins/ScrollBehavior.js', '~/plugins/CodeHighlight.js'], //'~/plugins/VueHighlight.js'
 
   build: {
     postcss: {
