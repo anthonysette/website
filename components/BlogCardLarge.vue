@@ -1,4 +1,5 @@
 <script setup>
+import { formatDate } from "../utils/helpers";
 const props = defineProps({
   image: {
     type: String,
@@ -10,7 +11,7 @@ const props = defineProps({
   },
   tags: {
     type: Array,
-    default: ["Category", "Category"],
+    default: [{ name: "Category", slug: "category" }],
   },
   title: {
     type: String,
@@ -29,19 +30,31 @@ const props = defineProps({
     type: String,
     default: "02-02-2021",
   },
+  readTime: {
+    type: Number,
+    default: 5,
+  },
 });
 
-const formattedDate = computed(() => {
-  const options = { year: "numeric", month: "long", day: "numeric" };
-  return new Date(props.date).toLocaleDateString("en-US", options);
-});
+const formattedDate = computed(() => formatDate(props.date));
 </script>
 
 <template>
   <!-- border-[#CFD6E5] -->
   <nuxt-link
     :to="`/blog/${uid}`"
-    class="flex flex-col sm:flex-row bg-white drop-shadow-xl rounded-lg flex"
+    class="
+      flex flex-col
+      sm:flex-row
+      bg-white
+      rounded-lg
+      flex
+      drop-shadow-md
+      hover:drop-shadow-xl
+      transition
+      ease-in-out
+      duration-300
+    "
   >
     <img
       :src="image"
@@ -56,10 +69,24 @@ const formattedDate = computed(() => {
       "
     />
     <div class="flex flex-col pt-5 p-7 sm:py-8 sm:px-10">
-      <p class="text-sm text-indigo-600 font-semibold pb-1">
-        {{ tags.join(", ") }}
-      </p>
-      <h4 class="text-lg font-black text-stone-900 pb-3">{{ title }}</h4>
+      <div class="block">
+        <span
+          v-for="tag in tags"
+          :key="tag.slug"
+          class="
+            rounded
+            bg-indigo-100
+            text-indigo-600 text-xs
+            font-medium
+            px-2.5
+            py-0.5
+            mr-2
+          "
+        >
+          {{ tag.name }}
+        </span>
+      </div>
+      <h4 class="text-lg font-black text-stone-900 pb-3 pt-2">{{ title }}</h4>
       <p class="text-base text-gray-500 line-clamp-3">{{ preview }}</p>
       <div class="flex items-center space-x-4 pt-6">
         <img
@@ -70,7 +97,7 @@ const formattedDate = computed(() => {
         <div class="dark:text-white">
           <div class="text-sm font-medium text-stone-900">Anthony Sette</div>
           <div class="text-sm text-gray-500 dark:text-gray-400">
-            {{ formattedDate }} • 6 min read
+            {{ formattedDate }} • {{ readTime }} min read
           </div>
         </div>
       </div>

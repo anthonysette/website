@@ -66,6 +66,7 @@ const formattedDate = computed(() => {
 
       <prismic-rich-text class="mt-10" :field="blog.data.body" />
     </div>
+    <related-articles :tags="blog.tags" :id="blog.id" />
   </main>
 </template>
 

@@ -1,5 +1,16 @@
 <script setup>
-const { client, asText } = usePrismic();
+const { client, asText, predicate } = usePrismic();
+
+const props = defineProps({
+  tags: {
+    type: Array,
+    default: [],
+  },
+  id: {
+    type: String,
+    default: "",
+  },
+});
 
 const getBlogs = async () => {
   const response = await client.getAllByType("blog_post", {
@@ -7,6 +18,10 @@ const getBlogs = async () => {
       field: "document.data.release_date",
       direction: "desc",
     },
+    predicates: [
+      predicate.any("document.tags", props.tags),
+      predicate.not("document.id", props.id),
+    ],
     pageSize: 3,
   });
   return response.map((doc) => {
@@ -24,11 +39,6 @@ const getBlogs = async () => {
 };
 const { data: blogs } = await useAsyncData("blogs", () => getBlogs());
 </script>
-
-        <!-- :tags="blog.tags[0]"
-        :preview="blog.data.body[0].text"
-        :image="blog.data.featured_image.Thumbnail.url"
-        :imageAlt="blog.data.featured_image.Thumbnail.alt" -->
 
 <template>
   <div id="popular-articles" class="max-w-7xl px-4 mx-auto pb-16 pt-12">
@@ -57,7 +67,7 @@ const { data: blogs } = await useAsyncData("blogs", () => getBlogs());
       "
     >
       Sharing insights about the latest trends in software engineering and the
-      satrtup world.
+      startup world.
     </p>
     <div class="gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
       <BlogCard

@@ -22,9 +22,17 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxtjs/prismic'],
+  modules: ['@nuxtjs/prismic', '@nuxtjs/strapi'],
 
   prismic: { endpoint: 'anthonysette' },
+
+  strapi: {
+    url: process.env.STRAPI_URL || 'https://localhost:8080',
+    prefix: '/api',
+    version: 'v4',
+    cookie: {},
+    cookieName: 'strapi_jwt'
+  },
 
   css: ["@/assets/css/main.css"],
 

@@ -6,10 +6,9 @@ definePageMeta({
 
 <template>
   <div>
-    <!-- <Hero /> -->
-    <PopularBlogSection />
-    <CTASection />
-    <AllBlogSection />
+    <FeaturedArticlesSection />
+    <AboutSection />
+    <AllArticlesSection />
   </div>
 </template>
 

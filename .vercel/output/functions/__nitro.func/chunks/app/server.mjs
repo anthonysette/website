@@ -1708,7 +1708,7 @@ const PrismicRichTextImpl = /* @__PURE__ */ defineComponent({
     const maybeRouter = inject(routerKey, null);
     if (maybeRouter) {
       let links = [];
-      const navigate = function(event) {
+      const navigate = function (event) {
         event.preventDefault();
         maybeRouter.push(this.href);
       };
@@ -1751,7 +1751,7 @@ const PrismicRichTextImpl = /* @__PURE__ */ defineComponent({
   }
 });
 const PrismicRichText = PrismicRichTextImpl;
-const TODOSliceComponent = () => null ;
+const TODOSliceComponent = () => null;
 const SliceZoneImpl = /* @__PURE__ */ defineComponent({
   name: "SliceZone",
   props: {
@@ -2022,7 +2022,7 @@ const _sfc_main$5 = {
       _push(`<div${ssrRenderAttrs(mergeProps({
         id: "popular-articles",
         class: "max-w-7xl px-4 mx-auto pb-16 pt-12"
-      }, _attrs))}><h2 class="pb-6 text-2xl text-[#271A17] md:text-4xl max-w-4xl mx-auto text-center font-black"> Popular Articles </h2><p class="text-base text-gray-500 mx-auto max-w-2xl sm:text-lg md:text-xl text-center pb-9"> Sharing insights about the latest trends in software engineering and the satrtup world. </p><div class="gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"><!--[-->`);
+      }, _attrs))}><h2 class="pb-6 text-2xl text-[#271A17] md:text-4xl max-w-4xl mx-auto text-center font-black"> Popular Articles </h2><p class="text-base text-gray-500 mx-auto max-w-2xl sm:text-lg md:text-xl text-center pb-9"> Sharing insights about the latest trends in software engineering and the startup world. </p><div class="gap-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"><!--[-->`);
       ssrRenderList(unref(blogs), (blog) => {
         _push(ssrRenderComponent(_component_BlogCard, {
           key: blog.id,
